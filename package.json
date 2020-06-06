@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack-dev-server",
+    "web": "webpack-dev-server",
     "start": "webpack"
   },
   "devDependencies": {
@@ -34,6 +34,10 @@
     ],
     "plugins": [
       "transform-react-jsx",
+      ["react-css-modules", {
+        "attributeNames": {"styleName": "className"},
+        "generateScopedName": "[local]_[hash:base64:5]"
+      }],
       ["transform-react-pug", {
         "classAttribute": "styleName"
       }],
