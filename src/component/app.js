@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './app.css'
+import './index.styl'
 
 export default function myComponent () {
   const [counter, setCounter] = useState(0)

@@ -17,6 +17,8 @@
     "babel-plugin-transform-react-pug": "^7.0.1",
     "css-loader": "^3.5.3",
     "style-loader": "^1.2.1",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0"
@@ -35,12 +37,9 @@
     "plugins": [
       "transform-react-jsx",
       ["react-css-modules", {
-        "attributeNames": {"styleName": "className"},
         "generateScopedName": "[local]_[hash:base64:5]"
       }],
-      ["transform-react-pug", {
-        "classAttribute": "styleName"
-      }],
+      "transform-react-pug",
       "transform-jsx-css-modules"
     ]
   }
